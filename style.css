@@ -10,58 +10,77 @@ body{
 header{
     background: url(img/bg.png) center no-repeat;
     background-size: cover;
-    margin-bottom: 0;
-    padding-bottom: 10px !important;
+    max-height: 830px;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
 .container {
     padding-left: 0;
     padding-right: 0;
 }
-#menu{
-    font-size: 35px;
-    color: red;
-    display:none; 
-    position: relative; 
-    z-index: 55;
-}
-.header-right-top {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: 100px !important;
-    padding-left: 445px;
-}
-.header-right-top span{
-    font-family: 'Montserrat', sans-serif;
+
+.top {
+    position: absolute;
+    right: 2%;
+    top: 35%;
+  }
+  
+  .top span {
+    font-family: "Montserrat", sans-serif;
+    color: #3d2514;
     font-size: 17px;
     font-weight: bold;
-    padding-left: 10px;
+    margin-left: 7px;
+  }
+  
+  .ul-menu {
+    margin-top: 96px !important;
+  }
+  
+  .ul-menu li.nav-item a.nav-link {
     color: #3d2514;
-}
-.header-menu{
-    padding-top: 27px;
-}
-.header-menu ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: end;
-}
-.header-menu ul li{
-    margin-left: 60px;
-}
-.header-menu ul li a{
-    font-family: 'Bebas Neue', cursive;
-    text-decoration: none;
-    text-transform: uppercase;
     font-size: 21px;
-    font-weight: bold;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 3px;
+    margin-left: 40px;
+    font-weight: 500;
+    border-radius: 5;
+    position: relative;
+    z-index: 88;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  
+  .ul-menu li.nav-item:hover {
+    color: #DF1B1B;
+  }
+  .ul-menu li a{
+    -webkit-transition: all 0.4s ease-out;
+     transition: all 0.4s ease-out;
+  }
+  .ul-menu li a:hover{
+  color: red !important;
+  letter-spacing: 4px !important;
+  }
+  .active1{
+    color: red !important;
+    letter-spacing: 4px !important;
+  }
+  .navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  } 
+  .icon {
+    font-size: 35px;
+    position: relative;
+    z-index: 1000;
     color: #3d2514;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-}
+  }
+
 .banner-left{
     padding-top: 170px;
 }
@@ -90,7 +109,7 @@ header{
     position: relative;
 }
 .banner-img img{
-    width: 110%;
+    width: 100%;
     padding: 0;
     margin-bottom: -80px;
 }
@@ -179,6 +198,9 @@ header{
     letter-spacing: 2px;
     margin-bottom: 0px;
     margin-top: -7px;
+}
+h2.img2-txt {
+    margin-top: 10px;
 }
 .img1 h1,.img2 h1{
     padding-bottom: 70px;
@@ -309,6 +331,9 @@ img.shadow-img {
     background: yellow !important;
     width: 45px !important; 
 }
+.slider-img-col {
+    margin-top:70px;
+}
 
 /* Up Coming Event section end */
 /* TABLE BOOK SECTION START */
@@ -425,7 +450,7 @@ margin-bottom: 45px;
 .socil-icom{
     position: absolute;
     bottom: 5%;
-    right: -10%;
+    right: 5%;
 }
 .socil-icom span a{
     background: white;
@@ -444,386 +469,418 @@ margin-bottom: 45px;
     color: red;
     background: black;
     transform: translateY(-6px);
-}h5.location-h5 {
-    display: none;
 }
 /* footer end */
 
-@media screen and (max-width:1275px){
-    .socil-icom{
-        right: 0%;
-    }
-}
-
-
-@media screen and (max-width:1200px){
-    .header-right-top {
-        padding-left: 264px;
-    }
-    .socil-icom {
-        right: -19%;
-    }
-    .footer-logo p {
-        margin-right: 139px;
-    }
-    .indicator {
-        bottom: 11%;
-        left: 9%;
-    }
-}
-@media screen and (max-width:1150px){
-    .socil-icom{
-        right: 0%;
-    }
-    .footer-logo p {
-        margin-right: 59px;
-    }
-    .indicator {
-        bottom: 10%;
-        left: 8%;
-    }
-}
-
-
-
-
-
-
-
-@media screen and (max-width:1076px){
-  
-    .banner-left p {
-        width: 335px;
-        font-size: 20px;
-    }
-    .banner-left h1 {
-        font-size: 60px;
-    }
-    .banner-left h4 {
-        font-size: 30px;
-    }
-    .price {
-        bottom: 15%;
-    }
-    .banner-img img {
-        width: 100%;
-        margin-bottom: 0;
-    }
-    .choose-img-txt h2 {
-        font-size: 33px;
-    }
-    .choose-img-txt p {
-        font-size: 16px;
-    }
-    .choose-img-txt a {
-        padding: 16px 43px 11px 43px;   
-    }
-   
-}
-
-
-
-@media screen and (max-width:1050px){
-    #menu {
-        display:block;
-        cursor: pointer;
-        margin-right: 20px;
-        font-size: 30px;
-    }
-    .logo img {
-        width: 90%;
-    }
-   
-    .header-menu {
-       padding-top: 0 !important;
-       order: 0;
-    } 
-    .header-right {
-        display: flex;
-        flex-direction: column;
-        width: 370px;
-        position: absolute;
-        top: 100%;
-        right:0%;
-        background: rgba(0, 0, 0, 0.883);
-        z-index: 8;
-        justify-content: start;
-        border-radius: 5px 0 0 50px;
-        opacity: 0;
-        visibility: hidden;
-        transition: .6s;
-    }
-    .header-right.show{
-        opacity: 1;
-        visibility: visible;
-        top: 16%;
-    }    
-
-    .header-right-top {
-   
-        order: 3;
-        align-items: center;
-        justify-content: space-around;
-        padding-left: 0 !important;
-        margin: 0!important;
-        padding: 40px 5px;
-    }
-    .header-right-top span {
-        margin-left: -34px;
-        color: #fb7a00;
-    }
-    .header-menu ul {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .header-menu ul li {
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid white;
-    }
-    .header-menu ul li a {
-        display: block;
-        padding: 10px 0;
-        transition: 0.4s;
-        font-size: 30px;
-        color: white;
-    }
-   
-    .header-menu ul li a:hover{
-        border-radius: 53px 0;
-        background: rgb(255, 0, 0);
-        color: rgb(252, 249, 247);
-
-    }
-    .price {
-        width: 150px;
-        height: 150px;
-       
-    }
-    .header-right-top {
-        padding-left: 257px;
-    }
-    .choose-img-txt h2 {
-        font-size:29px;
-    }
-    .choose-img-txt p {
-        font-size: 15px;
-    }
-    .socil-icom {
-        right: 7%;
-    }
-    .indicator {
-        bottom: 10%;
-        left: 5%;
-    }
-}
-@media screen and (max-width:1050px){
-    .banner-img img {
-        width: 100%;
-        margin-bottom: 0;
-        margin-left: 60px;
-    }
-    .price {
-        width: 150px;
-        height: 150px;
-        left: 22%;
-    }
-    .choose-img-txt a {
-        padding: 14px 41px 10px 41px;   
-    }
-    h2.img2-txt {
-        margin-top: 16px;
-    }
-    .cake {
-        top: 2%;
-        width: 25%;
-    }
-    img.plate {
-        bottom: -35%;
-        width: 25%;
-    }
-    img.sos {
-        top: 34%;
-        width: 25%;
-    }
-    .table-book-info form input:nth-child(6) {
-        
-        font-size: 18px;
-        padding: 16px 0 13px 0;
-    }
-    .choose-top-txt h4 {     
-        font-size: 24px;
-        width: 230px;
-        padding: 15px 0 10px 0;
-    }
-    .choose-top-txt h1 {
-        font-size: 45px;
-    }
-    
-   
-}
-@media screen and (max-width:1010px){
-    .footer-logo p {
-        padding-left: 15px;
-    }
-    .footer-logo h5 {
-        margin: 166px 0 30px 15px;
-    }
-    .footer-logo img {
-        margin: 80px 0 45px 15px;
-    }
-    
-    .footer-logo {
-        margin-top: 0;
-    }
-}
-@media screen and (max-width:991px){
-    .footer-logo h5 {
-        margin: 166px 0 30px 0;
-        font-size: 17px;
-        font-family: 'Bebas Neue';
-        display: none;
-    }
-    .location p {
-        font-size: 18px;
-    }
-    h5.location-h5 {
-        font-size: 17px;
-        font-family: 'Bebas Neue';
-        display: block !important;
-        margin-top: 40px;
-    }
-    .indicator {
-        bottom: 5%;
-        left: 50%;
-        transform: translate(-50%);
-    }
-}
-@media screen and (max-width:850px){
-    .table-book-info h1 {
-        font-size: 40px;
-    }
-    .table-book-info {
-        width: 65% !important;
-    }
-    .cake {
-        top: -4%;
-        width: 22%;
-    }
-    img.plate {
-        bottom: -30%;
-        width: 20%;
-    }
-    img.sos {
-        top: 30%;
-        width: 25%;
-        left: 3%;
-    }
-}
-
-
-
-
-@media screen and (max-width:767px){
-    .banner-img img {
-        width: 100%;
-        margin-left: 0;
+@media screen and (max-width: 1230px) {
+    .header-img {
+      margin-top: -80px;
     }
     .price {
         width: 160px;
         height: 160px;
-        left: 11%;
-    }
-    .try-left h1 {
-        margin-bottom: 283px;
-    }
-    .img1 {
-        margin-bottom: 45px !important;
-    }
-    h2.img2-txt {
-        margin-top: 16px;
-    }
-    .choose-img-txt a {
-        padding: 15px 42px 11px 42px;
-        margin-bottom: 70px;
-        font-size: 20px;
-    }
-    .choose-img-txt h2 {
-        font-size: 40px;
-        margin-bottom: 16px;
-    }
-    .choose-img-txt p {
-        font-size: 18px;
-        width: 350px;
-        margin: auto;
-        margin-bottom: 16px;
-    }
-    .choose-top-txt h1 {
-        font-size: 40px; 
-    }
-    .table-book-info h3 {
-        font-size: 23px;
-    }
-    .table-book-info h1 {
-        font-size: 27px;
-    }
-    .table-book-info {
-        width: 75% !important;
-    }
-    img.sos {
-        top: 30%;
-        width: 27%;
-        left: -2%;
-    }
-    img.plate {
-        bottom: -14%;
-        width: 15%;
-    }
-    .table-book-info form input {
-        margin-bottom: 20px;
-    }
-    .footer-logo img {
-        width: 47%;
-    }
-    h5.location-h5 {
-        font-size: 15px;
-    }
-    .socil-icom span a {
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-    }
-    .table-book-info form input:nth-child(6) {
-        font-size: 14px;
-        padding: 17px 0 15px 0;
-    }
-    .upcoming-enent-txt h1 {
-        font-size: 30px;
-    }
-    .upcoming-enent-txt h3 {
-        font-size: 25px;
+        bottom: 8%;
+        left: 15%;
     }
     .banner-left p {
-        width: 317px;
-        font-size: 19px;
-        margin-left: 20px;
+        width: 380px;
+        font-size: 23px;
+    }
+    .banner-left {
+        padding-top: 130px;
+    }
+    .upcoming-enent-txt h1 {
+        font-size: 38px;
+    }
+    .table-book-info h1 {
+        font-size: 47px;
+    }
+  }
+  
+  @media screen and (max-width: 1130px) {
+    .col-lg-5 .header-txt h1 {
+      font-size: 100px;
+    }
+    .col-lg-5 .header-txt h4 {
+      font-size: 50px;
+    }
+    .price {
+        width: 150px;
+        height: 150px;
+        bottom: 8%;
+        left: 15%;
+    }
+    .header-img .circle h1 {
+      font-size: 60px;
+    }
+    .header-img .circle h1 span {
+      font-size: 25px;
+    }
+    .header-img .circle .p {
+      font-size: 27px;
+      letter-spacing: 7px;
     }
     .banner-left h1 {
-        font-size: 50px;
-        margin-left: 20px;
+        font-size: 70px;
     }
     .banner-left h4 {
-        font-size: 27px;
-        margin-left: 20px;
+        font-size: 40px;
     }
-    .banner-img img {
-        width: 90%;
-        margin: 0 5%;
+    .upcoming-enent-txt h1 {
+        font-size: 33px;
     }
-    .socil-icom {
-        right: 0%;
+    .table-book-info h1 {
+        font-size: 45px;
+    }
+    .table-book-info {
+        width: 60% !important;
+    }
+    img.sos {
+        top: 25%;
+        left: 6%;
+    }
+    img.plate {
+        bottom: -49%;
+        width: 23%;
+    }
+    .cake {
+        top: -18%;
+        width: 25%;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+      .top{
+          display: none;
+      }
+      .banner-img {
+        margin-top: -269px;
+    }
+      .bottom span {
+        font-family: "Montserrat", sans-serif;
+        color: #3d2514;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: 7px;
+      }
+      .ul-menu{
+          margin: 0 !important;
+      }
+      .banner-left {
+        padding-top: 72px;
+    }
+    .banner-img {
+     
+        margin-top: -265px;
+    }
+    .price {
+        width: 170px;
+        height: 170px;
+        bottom: 16%;
+        left: 18%;
+    }
+    .icon {
+        font-size: 30px;
+    }
+    .banner-img {
+        margin-top: -162px;
+    }
+    .choose-img-txt h2 {
+        font-size: 30px;
+    }
+    .choose-img-txt p {
+        font-size: 15px;
+    }
+    .choose-img-txt a {
+        font-size: 15px;
+        padding: 14px 43px 11px 43px;
+    }
+    h2.img2-txt {
+        margin-top: 17px;
+    }
+    .table-book-info {
+        width: 70% !important;
+    }
+    img.sos {
+        top: 23%;
+        left:0%;
+    }
+    img.plate {
+        bottom: -33%;
+        width: 19%;
+    }
+    .cake {
+        top: -15%;
+        width: 22%;
+    }
+    .table-book-info h1 {
+        font-size: 38px;
+    }
+    .table-book-info h1 {
+    font-size: 37px;
+   }
+   .table-book-info h3 {
+    font-size: 25px;
+}
+.footer-logo img {
+    margin-top: -16px;
+    margin-bottom: 45px;
+    width: 50%;
+}
+.location-h5 {
+    font-size: 17px;
+    font-family: 'Bebas Neue';
+    margin-top: 40px;
+}
+.footer-logo p {
+    margin-bottom: 60px;
+    margin-right: 0 !important;
+}
+.indicator {
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.upcoming-enent-txt p {
+    font-size: 19px;
+}
+  }
+  @media screen and (max-width:767px) {
+    .banner-img {
+        margin-top: -157px;
+    }
+    .try-left h1 {
+        padding-bottom: 305px;
+    }
+    .price {
+        width: 150px;
+        height: 150px;
+        bottom: 12%;
+        left: 16%;
+    }
+    .banner-left p {
+        width: 350px;
+        font-size: 21px;
+    }
+    .banner-left {
+        padding-top: 130px;
+    }
+    .choose-img-txt a {
+        margin-bottom: 100px;
+    }
+    .choose-top-txt h1 {
+        font-size: 40px;
+    }
+    .upcoming-enent-txt h3 {
+        font-size: 24px;
+    }
+    a.btn.btn-danger.last-a {
+        margin-bottom: 10px !important;
+    }
+    
+    .table-book-info {
+        width: 80% !important;
+    }
+    img.sos {
+        top: 18%;
+        left: -10%;
+    }
+    img.plate {
+        bottom: -12%;
+        width: 15%;
+    }
+    .cake {
+        top: -4%;
+        width: 20%;
+    }
+    .table-book-info h1 {
+        font-size: 25px;
+    }
+    .table-book-info h3 {
+        font-size: 21px;
+    }
+    .table-book-info form input:nth-child(6) {
+        font-size: 15px;
+        padding: 16px 0;
+    }
+    .footer-logo p {
+        font-size: 16px;
+        margin-right: 0 !important;
+    }
+    .upcoming-enent-txt p {
+        font-size: 18px;
+    }
+  }
+  @media screen and (max-width:575px) {
+    .banner-left p {
+        width: 300px;
+        font-size: 18px;
+    }
+    a.navbar-brand {
+        width: 63%;
+    }
+    .banner-left p {
+        width: 290px;
+        font-size: 17px;  
+    }
+    .banner-left {
+        padding-top: 63px;
+    }
+    .banner-img {
+        margin-top: -40px;
+        padding-bottom: 50px;
+    }
+    .price {
+        width: 140px;
+        height: 140px;
+        bottom: 13%;
+        left: 9%;
+    }
+    .header-img .circle h1 {
+      font-size: 60px;
+    }
+    .header-img .circle h1 span {
+      font-size: 25px;
+    }
+    .header-img .circle .p {
+      font-size: 27px;
+      letter-spacing: 7px;
+    }
+    .banner-left h1 {
+        font-size: 55px;
+    }
+    .banner-left h4 {
+        font-size:30px;
+    }
+    .choose-top-txt h1 {
+        font-size: 35px;
+    }
+    .choose-top-txt h4 {
+        font-size: 23px;
+        width: 210px;
+        padding: 15px 0 10px;
+    }
+    .choose-top-txt p {
+        font-size: 15px;
+    }
+    .upcoming-enent-txt h1 {
+        font-size:28px;
+    }
+    .upcoming-enent-txt h3 {
+        font-size: 20px;
+    }
+    
+    .last-a {
+        margin-bottom: 7px !important;
+    }
+    .table-book-info h3 {
+        font-size: 18px;
+    }
+    .table-book-info {
+        width: 83% !important;
+    }
+    img.sos {
+        top: 25%;
+        left: -7%;
+        width: 36%;
+    }
+    img.plate {
+        bottom: -4%;
+        width: 13%;
+    }
+    .cake {
+        top: -4%;
+        width: 20%;
+    }
+    .table-book-info h1 {
+        font-size: 25px;
+    }
+    .table-book-info form input {
+        margin-bottom: 23px;
+    }
+    .table-book-info h1 {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .table-book-info form input:nth-child(6) {
+        font-size: 12px;
+        padding: 18px 0;
+    }
+    .footer-logo p {
+        font-size: 15px;
+        margin-right: 0 !important;
+    }
+    .footer-logo img {
+        margin-top: -46px;
+        margin-bottom: 45px;
+        width: 60%;
+    }
+    .location-h5 {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 55px;
     }
     .upcoming-enent-txt p {
         font-size: 16px;
     }
-}
+  }
+  @media screen and (max-width:360px) {
+    .banner-left p {
+        width: 290px;
+        font-size: 17px;  
+    }
+    .banner-left {
+        padding-top: 63px;
+    }
+    .banner-img {
+        margin-top: -40px;
+        padding-bottom: 50px;
+    }
+    .price {
+        width: 101px;
+        height: 101px;
+        bottom: 7%;
+        left: 5%;
+    }
+    .price h2 span {
+        font-size: 18px;
+    }
+    .price h2 {
+        font-size: 38px;
+        margin: -6px;
+    }
+    .price p {
+        font-size: 21px;
+        letter-spacing: 7px;
+        padding-left: 10px;
+    }
+    .banner-left h1 {
+        font-size: 55px;
+    }
+    .banner-left h4 {
+        font-size:30px;
+    }
+    .choose-top-txt h1 {
+        font-size: 29px;
+    }
+    .upcoming-enent-txt h1 {
+        font-size: 22px;
+    }
+    .upcoming-enent-txt h3 {
+        font-size: 18px;
+    }
+    a.btn.btn-danger.last-a {
+        margin-bottom: 10px !important;
+    }
+    .table-book-info form input:nth-child(6) {
+        font-size: 10px;
+        padding: 18px 0;
+    }
+    .footer-logo p {
+        font-size: 14px;
+        margin-right: 0 !important;
+    }
+    .upcoming-enent-txt p {
+        font-size: 15px;
+    }
+  }
