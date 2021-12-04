@@ -49,7 +49,7 @@ img{
     border-radius: 5;
     position: relative;
     z-index: 88;
-    -webkit-transition: all 0.5s ease-out;
+     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
   }
   
@@ -166,9 +166,10 @@ img{
 
 .try-left{
     background: url(img/try1.png) center no-repeat;
-    background-size: cover;  
+    background-size:cover;  
     border-radius: 10px;
-   
+    /* width: 88%;
+    margin: auto !important; */
 }
 .img1{
     background: url(img/try2.png) center no-repeat;
@@ -305,8 +306,8 @@ img.shadow-img {
 .slider-row{
     display: flex;
     width: 300%;
-    transition: 0.5s;
-}
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;}
 .slider{
     width: 100%;
     position: relative;
@@ -325,11 +326,11 @@ img.shadow-img {
     margin-left: 4px;
     cursor: pointer;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.192);
-    transition: 1s;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
 }
 .active{
     background: yellow !important;
-    width: 45px !important; 
 }
 .slider-img-col {
     margin-top:70px;
@@ -462,7 +463,8 @@ margin-bottom: 45px;
     text-align: center;
     border-radius: 50%;
     margin: 0 5px;
-    transition: .5s;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     
 }
 .socil-icom span a:hover{
@@ -471,7 +473,10 @@ margin-bottom: 45px;
     transform: translateY(-6px);
 }
 /* footer end */
-
+form {
+    position: relative;
+    z-index: 11;
+}
 @media screen and (max-width: 1230px) {
     .header-img {
       margin-top: -80px;
@@ -576,8 +581,9 @@ margin-bottom: 45px;
     .price {
         width: 170px;
         height: 170px;
-        bottom: 16%;
-        left: 18%;
+        bottom: 11%;
+        left: 11%;
+        z-index: 2;
     }
     .icon {
         font-size: 30px;
@@ -644,10 +650,30 @@ margin-bottom: 45px;
 .upcoming-enent-txt p {
     font-size: 19px;
 }
+.banner-img img {
+    width: 85%;
+    position: relative;
+    z-index: 1;
+}
+section.choose {
+    padding-top: 20px !important;
+}
+.table-book-info h3 {
+    margin-top:50px;
+}
+.slider-img-col {
+    margin-top: 20px;
+}
+.footer-section {
+    margin-top: 80px;
+}
   }
   @media screen and (max-width:767px) {
     .banner-img {
         margin-top: -157px;
+    }
+    .banner-img img {
+        width:100%;
     }
     .try-left h1 {
         padding-bottom: 305px;
@@ -710,6 +736,19 @@ margin-bottom: 45px;
     .upcoming-enent-txt p {
         font-size: 18px;
     }
+    .try-left {
+        width: 90%;
+        margin: auto;
+    }
+    section.choose {
+        padding-top: 15px !important;
+    }
+    .table-book-info h3 {
+        margin-top: 40px;
+    }
+    .footer-section {
+        margin-top: 38px;
+    }
   }
   @media screen and (max-width:575px) {
     .banner-left p {
@@ -733,8 +772,8 @@ margin-bottom: 45px;
     .price {
         width: 140px;
         height: 140px;
-        bottom: 13%;
-        left: 9%;
+        bottom: 9%;
+        left: 6%;
     }
     .header-img .circle h1 {
       font-size: 60px;
@@ -753,7 +792,7 @@ margin-bottom: 45px;
         font-size:30px;
     }
     .choose-top-txt h1 {
-        font-size: 35px;
+        font-size: 34px;
     }
     .choose-top-txt h4 {
         font-size: 23px;
@@ -780,9 +819,9 @@ margin-bottom: 45px;
         width: 83% !important;
     }
     img.sos {
-        top: 25%;
-        left: -7%;
-        width: 36%;
+        top: 20%;
+        left: -8%;
+        width: 38%;
     }
     img.plate {
         bottom: -4%;
@@ -822,6 +861,12 @@ margin-bottom: 45px;
     }
     .upcoming-enent-txt p {
         font-size: 16px;
+    }
+    section.choose {
+        padding-top: 10px !important;
+    }
+    .table-book-info h3 {
+        margin-top: 35px;
     }
   }
   @media screen and (max-width:360px) {
@@ -874,7 +919,16 @@ margin-bottom: 45px;
     }
     .table-book-info form input:nth-child(6) {
         font-size: 10px;
-        padding: 18px 0;
+        padding: 13px 0;
+    }
+    img.sos {
+        top: 42%;
+        left: -8%;
+        width: 38%;
+    }
+    .cake {
+        top: 6%;
+        width: 25%;
     }
     .footer-logo p {
         font-size: 14px;
@@ -882,5 +936,19 @@ margin-bottom: 45px;
     }
     .upcoming-enent-txt p {
         font-size: 15px;
+    }
+    section.choose {
+        padding-top: 0px !important;
+    }
+    .table-book-info form input {
+        margin-bottom: 17px;
+        padding: 7px 0 7px 6px;
+        font-size: 17px;
+    }
+    .btn1 {
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        margin-left: 2px;
     }
   }
