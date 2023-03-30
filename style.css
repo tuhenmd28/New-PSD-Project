@@ -168,6 +168,7 @@ img{
     background: url(img/try1.png) center no-repeat;
     background-size: cover;  
     border-radius: 10px;
+    padding-bottom: 250px;
    
 }
 .img1{
@@ -265,6 +266,14 @@ img.shadow-img {
 .shadow1{
     box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.103);
 }
+.row.mt-5.pb-5.shadow1.g-1 {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.103);
+    padding: 20px;
+    border-radius: 7px;
+}
+.col-lg-6.upcoming-enent-txt {
+    padding-right: 20px;
+}
 .upcoming-enent-txt h3{
     font-size: 29px;
     color: #3d3d3d;
@@ -284,21 +293,21 @@ img.shadow-img {
     font-family: 'Montserrat';
     margin-top: 30px;
 }
-/* .upcoming-enent-txt span {
+.upcoming-enent-txt span {
     width: 15px;
     height: 15px;
     background: yellow;
     border-radius: 50%;
     display: inline-block;
     margin-top: 36px;
-} */
+}
 .slider-container{
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 .upcoming-slider{
-    width: 90%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -402,11 +411,14 @@ img.sos {
 }
 /* TABLE BOOK SECTION END */
 /* footer start  */
+.footer-mid.container-fluid{
+    background: url(img/bottomimg.png) center no-repeat;
+    background-size: cover;
+
+}
 .footer-section{
     width: 96%;
     margin: auto;
-    background: url(img/bottomimg.png) center no-repeat;
-    background-size: cover;
     margin-top: 127px;
 }
 .footer-logo{
@@ -649,8 +661,12 @@ margin-bottom: 45px;
     .banner-img {
         margin-top: -157px;
     }
+    .try-left{
+        padding-bottom: 0;
+        margin-bottom: -25px;
+    }
     .try-left h1 {
-        padding-bottom: 305px;
+        padding-bottom: 65px;
     }
     .price {
         width: 150px;
